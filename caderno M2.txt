@@ -1,0 +1,246 @@
+//////////////////////////////////////////////////////
+Capítulo 13
+ºaula1
+A importância das cores
+Neil Patel "Como cores afetam conversões"
+> pessoas levam 90 segundos para decidir-se se querem ou
+não um produto, e quase 90% dessa decisão se baseia na
+sua cor.
+➡ https://rockcontent.com/blog/psicologia-das-cores/
+➡ http://www.matildefilmes.com.br/psicologia-das-cores-guiaavancado-para-profissionais/
+➡ https://neilpatel.com/br/blog/psicologia-das-cores-comousar-cores-para-aumentar-sua-taxa-de-conversao/
+
+Não usar contraste fundo preto letra branca quando se usa
+muito texto
+
+ºaula2
+Como representar as cores no CSS
+Representação por:
+> Nome
+> Código hexadecimal ( 0 1 2 3 4 5 6 7 8 9 A B C D E F )
+> RGB (R, G, B, a)
+> HSL (Hue, Saturation, Luminosity)
+
+ºaula3 - Harmonia de cores
+Círculo cromático - Harmonia
+Simetria e cor
+Paleta de cores - de 3 a 5 cores
+Cores complementares - contraste
+Análogas - suavidade
+Análogas + complementar
+
+º aula6
+background-image: linear-gradient();
+
+* {
+  config global
+}
+
+#### cap14
+aula 1 - tipografia
+
+Monge Copista - copiava um livro a mão
+
+Johannes Gutenberg
+ - Prensa de Tipos Móveis
+
+TIPO	týpos
+GRAFIA	graphia
+
+Fontes passam emoções
+
+Anatomia do tipo
+- altura da letra x minúscula
+- altura das maiúsculas
+- ascendente 
+- descendente
+- corpo
+- serifa
+- haste
+- filete
+- arco
+- esporão
+- vértice
+- terminal
+- braço
+- perna
+- pé 
+- espinha
+- barriga
+- olho
+- orelha
+- cauda
+- glifo
+- fonte
+
+- serifada
+- sans-serif
+- monoespaçada
+- handwriting
+- display
+
+CSS web safe font combinations
+
+body {
+	font-family: serif ou sans-serif ou monospace; /* genérico */
+}
+
+aula 4 - tamanho de fonte
+- Medidas absolutas
+cm, mm, in, px, pt, pc
+
+- Medidas relativas
+em, ex, rem, vw, vh, %
+
+font-size - recomendado: px e em
+
+16px geralmente é igual a 1em
+
+peso da fonte 
+
+shorthand - font:
+font-style
+font-weight
+font-size
+font-family
+
+
+==Google fonts==
+@font-face {
+	font-family: ;
+	src: url() format();
+}
+
+	Tipos de Format:
+- opentype (otf)
+- truetype (ttf)
+- embeded-opentype
+- truetype-aat (Apple Advanced Typography)
+- svg
+
+Fonts Ninja - pegar fontes de sites
+What font is
+Font Squirrel
+My fonts
+
+#ID - único elemento
+.Class - vários elementos
+
+===============Pseudo-Classes===================
+>> configuração de estado
+
+sel:state {
+}
+
+-_-_-_-_-_-_-_-Pseudo-Elemento-_-_-_-_-_-_-_-_-
+>> age no conteúdo
+
+:: pseudo-element
+
+
+____-HTML - CSS Box Model-_____
+
+Colocar um elemento dentro do outro
+
+Todo elemento é uma caixa
+
+> toda caixa tem tamanho
+-> altura (height)
+-> largura (width)
+
+ºººººººººANATOMIA DE CAIXAºººººººººººº
+> borda é uma linha que circunda o conteúdo
+> padding - espaço entre a borda e o conteúdo
+> margin é o lado de fora da borda
+> outline é o traçado fora da borda
+
+*********Tipos de caixa***********
+
+>> box-level - sempre inicia uma linha nova, ocupa toda a largura da tela
+-- <div>
+-- <h1> - <h6>
+-- <p>
+-- <main>
+-- <header>
+-- <nav>
+-- <article>
+-- <aside>
+-- <footer>
+-- <form>
+-- <video>
+>> inline-level - não quebra a linha, ocupa apenas o espaço do conteúdo
+-- <span>
+-- <a>
+-- <code>
+-- <small>
+-- <strong>
+-- <em>
+-- <sup> - <sub>
+-- <label>
+-- <button>
+-- <input>
+-- <select>
+
+>> user agent é o navegador que está exibino o conteúdo
+
+block = box-level
+
+margin: auto; - deixa caixa no meio
+inline-block - é inline, mas tem característica de bloco, ou seja, pode-se modificar
+altura e largura.
+
+&&&&&&&& ANINHAMENTO DE CAIXAS &&&&&&&&&
+Grouping Tags semânticas:
+
+<header> --> Cabeçalho
+	<h1>Título</h1>
+	<nav>Links - navegação</nav>
+</header>
+	<main> --> Conteúdo principal
+		<section> --> assuntos
+			<article> --> parágrafos
+			<h2>Subtítulos</h2>
+			<p>lorem ipsum dolor sit amet</p>
+			<aside>
+				<p> lorem ipsum </p>
+			</aside> --> periféricos
+		</section>
+	</main>
+
+########### DESAFIO 10 #################
+Planejar:
+#1 layout --> mockflow.com
+#2 cores 
+#3 fonte
+
+========== Variáveis em CSS ============
+:root {
+  --nome: valor;
+} ==> pseudoclasse que serve para todo o documento
+
+------------------Responsividade-------------------
+>> adaptar o tamanho dos elementos do site para os
+tamanhos de tela
+
+--> largura máxima
+--> largura mínima
+
+list-style-type: '\2714\00A0\00A0'; ---> NÃO COMPATÍVEL COM TODOS OS NAVEGADORES
+
+>>>> Margem negativa --> faz um elemento encaixar no outro
+
+
+&&&&&&&&&  Responsividade de vídeo &&&&&&&&&&&&
+#1 - Envelopar o iframe em uma div.video
+#2 - div.video {background-color: color;
+#3 - margem negativa para colar a div no main
+#4 - div.video > iframe {position: absolute;}
+#5 - div.video {position: relative;}
+#6 - div.video {padding-bottom: 50%;} --> muda as barras pretas no vídeo
+#7 - top e left --> distâncias entre a ponta superior esquerda do vídeo e a div
+#8 - top e left 5%
+#9 - width e hight --> 90%
+
+A ordem de padding e position pode deixar o bagulho zoado
+1º padding
+2º position

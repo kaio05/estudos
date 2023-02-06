@@ -1,0 +1,362 @@
+código multibyte
+UTF-8
+
+DNS - sistema de nome de domínio
+procura um ip pelo domínio
+
+/////////////////////////////////////////
+
+*M1C2A2
+ RECODE <--
+
+URL - ponte (Localizador de Recurso Uniforme
+-> www.|github.(com)|/gustavoguanabara
+sub-domínio.|domínio.|(TLD)/caminho
+
+gustavoguanabara.github.io
+sub-domínio.domínio+TLD
+->URL
+
+GTLD - genérico top level domain
+.com .org .net .edu
+CCTLD - country code
+.br .uk . us .tv
+
+DOMÍNIO - nome único; pago anualmente; vários TLD;
+SERVIDOR - HOSPEDAGEM (local onde o site está guardado); pago mensalmente; escolhe por espaço, memória, recursos
+
+/////////////////////////////////////////
+
+M1C3A1
+A HTML - a linguagem
+AS CSS'S - as folhas de estilo
+
+Hyper-		   Cascading
+Text		   Style 
+Markup		   Sheet
+Language
+
+HTML - conteúdo (texto, imagem, vídeo, tabela)
+CSS - design (cor, posição, tamanho)
+JS - interações (menus, animações, popups)
+
+
+		*HTML*
+<abertura de tag>CONTEÚDO</fechamento>
+
+<img src="foto.png" alt="exemplo de foto">
+'-> abertura        '->parâmetro  |
+ 		           valor<-'
+
+		*CSS*
+seletor {
+ 	 declaração; 
+	 propriedade: valor;
+	}
+
+*Estrutura básica de documento HTML*
+
+<!DOCTYPE html> --> diz que é HTML5
+<html lang="pt-br">
+(inden- <head>  (configurações)
+tação)      <meta charset="UTF-8"> (caracteres)
+	    <meta name="viewport"
+	    <content="width=device-width,
+	    initial-scale=1.0"> (ocupa a tela inteira)
+	    <title>Document</title> 
+	</head>
+	<body>  (conteúdo)
+	    <h1>Olá, mundo!</h1>
+	</body
+</html>
+
+////////////////////////////////////////
+
+*M1C3A2
+
+Front-end {
+HTML + CSS + JS -> client-side
+(client-side developer)
+parte visual e interativa
+}
+
+Back-end {
+server-side
+interação do código com as "entranhas" do servidor
+banco de dados
+-php
+-js (node)
+-c#
+-python
+-ruby
+-java
+}
+
+-> Sites que usam apenas client-side são chamados
+"estáticos". Para sites como lojas on-line
+é obrigatório o uso de tecnologias de servidor,
+para que não seja necessário atualizar o site 
+manualmente.
+
+
+client-side--internet-->server-side----->banco de dados
+front-end<---------------back-end<-----------html--'
+
+front-end + back-end = full stack
+
+/////////////////////////////////////////
+
+*M1C5A2
+ºParágrafos <p> e </p>
+ºQuebras <br>
+ºSímbolos especiais &reg; &euro &larr; etc.
+-> https://www.w3schools.com/charsets/ref_utf_symbols.asp
+ºEmoji
+-Substitui o U+ por &#x
+-> emojipedia.org
+
+/////////////////////////////////////////
+
+*M1C6A1
+Direito autoral
+
+ferramentas imagens google - filtros
+
+sites de imagens gratuitas:
+unsplash
+pexels
+freepic
+howpixel
+libreshot
+pixabay
+wikimediacomons
+
+Programa de manipulação de imagem:
+Gimp
+
+/////////////////////////////////////////
+
+*M1C6A2 - Formato das imagens
+
+JPEG - Joint Photographics Experts Group
+-> Tamanho reduzido
+PNG - 
+-> Maior qualidade
+-> Fundo transparente
+
+/////////////////////////////////////////
+
+*M1C6A3 - Tamanho de imagem
+
+
+M1C7A1
+**HTML se foca em semântica, não em forma**
+
+Diferenças entre HTML4 e 5: https://www.w3.org/TR/html5-
+diff/#absent-attributes 
+Elementos obsoletos na HTML5: https://dev.w3.org/html5/
+pf-summary/obsolete.html
+
+M1C8A1,2,3,4
+Tags aprendidas:
+semânticas:
+h1-6
+strong
+em
+mark
+small
+del
+ins
+sub
+sup
+pre ==> pré-formatação
+code ==> monospace
+q ==> citação
+blockquote ==> citação completa
+Abbr ==> abreviação
+bdo ==> Texto invertido
+
+não semânticas:
+b
+i
+big
+u
+
+Teclas de atalho:
+ctrl + shift + p + wrapabrr => envelopar
+shift + tab ==> contra-tabulação
+
+***M1C9
+Tipos de lista 
+Ordenada - <ol>
+tipos => 1;a;A;I;i
+
+Não ordenada - <ul>
+tipos => disc;circle;square
+
+Definições - <dl>
+termos => <dt>
+descrições => <dd>
+
+***Capítulo 10***
+Links
+
+<a> ==> âncora - cria o link
+
+ºhref='' ==> parâmetro da âncora onde coloca a URL do site que se quer acessar
+ºhreflang ==> parâmetro que indica a linguagem do site
+ºtarget ==> indica onde o site ou página vai abrir
+>_blank ==> abre em outra janela 
+>_self ==> abre na mesma janela
+ºrel ==> indica a autoria do site ou página
+>next - o link é para a próxima parte do documento atual
+>prev - o link é para a parte anterior do documento atual
+>author - o link é para um site do autor atual
+>exterbal - o link é para um site que não faz parte do site atual
+>nofollow - o link é para um site endossado, como um link pago
+
+<a href="pagina2.html" target="_self" rel="next">
+	continuar navegando no site
+</a>
+
+// link interno
+
+<a href="https://gustavoguanabara.github.com" target="_blank" rel="external">
+	abrir perfil github em nova janela 
+</a>
+
+// link externo
+
+&&Downloads
+<a href="arquivos/meuarquivo.pdf" download="meuarquivo.pdf" type="applicarion/pdf">
+	Baixe aqui o PDF do meu arquivo
+</a>
+
+mediatypes comuns:
+‣ application/zip 
+‣ text/html 
+‣ text/css 
+‣ text/javascript 
+‣ video/mp4 
+‣ video/H264 
+‣ video/JPEG 
+‣ audio/aac 
+‣ audio/mpeg 
+‣ font/ttf 
+‣ image/jpeg 
+‣ image/png 
+
+https://www.iana.org/assignments/media-types/media-types.xhtml
+
+*Capítulo 11
+<picture>
+	<source media="(max-width: 750px)" srcset="foto-p.png" type="image/png">
+	<source media="(max-width: 1050px)" srcset="foto-m.png" type="image/png">
+	<img src="foto-g.png" alt="A imagem flexível funciona"> 
+</picture>
+
+Portal SEO: https://youtu.be/jWnMfvSdo1E
+
+A imagem grande é o padrão
+> Define imagens para serem usadas de acordo com o tamanho máximo da tela
+> Sempre da menor para a maior
+
+A tag <source> possui três atributos:
+> type vai indicaar o media type da imagem
+> srcset vai configurar o nome da imagem que será 
+carregada quando o tamanho indicado for atingido
+> media indica o tamanho máximo a ser considerado 
+para carregar a imagem indicada no atributo srcset
+
+!usar um valor ligeiramente acima
+
+https://jovemnerd.com.br/?podcast_guest=gustavo-guanabara
+20221228002392194
+
+Atributos da tag <audio>:
+> preload indica se o áudio será pré-carregado ou não e 
+aceita 3 valores:
+º metadata vai carregar apenas as informações sobre o 
+arquivo (tamanho, tempo, informações de direitos, etc)
+º none não vai carregar absolutamente nada até que o
+usuário clique no botão play ou um script inicie a 
+reprodução
+º auto (padrão) vai carregar o arquivo de áudio inteiro
+assim que a página for carregada, mesmo que o usuário
+nunca aperte o play
+
+> O atributo *controls vai apresentar o player na tela.
+Caso não seja colocado na tag <audio>, o controle será
+transparente e o usuário não poderá interagir com ele.
+> O atributo *autoplay, quando inserido, vai iniciar 
+a reprodução do áudio assim que a página dor carregada.
+> O atributo *loop vai fazer com que o áudio seja 
+repetido eternamente assim que terminar sua reprodução.
+
+-> Há vários source dentro de audio, os de baixo só serão
+carregados caso os de cima falhem. Caso todos falhem,
+criamos um parágrafo que permite o download do arquivo MP3.
+
+/// Direitos autorais
+Youtube studios -> Biblioteca de áudio -> Atribuição não
+necessária
+
+Compatibilidade >> MP3 WAV OGG
+
+<$#>Vídeos
+<video width="600" poster="thumb.jpg" controls autoplay>
+	<source src="meu-video.webm" type="video/webm">
+	<source src="meu-video.mp4" type="video/mp4">
+	<source src="meu-video.ogv" type="video/ogg">
+	<p>Infelizmente seu navegador não conseguiu carregar o video.</p>
+</video>
+
+> width - largura do vídeo
+> poster - capa
+> controls - configura os controles
+> autoplay - toca o vídeo quando a página carrega
+
+Desafio 009 links
+Hardware
+https://youtu.be/iT6E92Kt38o
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iT6E92Kt38o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Javascript
+https://www.youtube.com/playlist?list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BXqUH86F-kA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Python
+https://www.youtube.com/playlist?list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/S9uPNppGsGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/epDCjksKMok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Capítulo 12 - Trabalhando com estilos
+
+/*CSS inline style*/
+<body style="background: blue;">
+</body>
+
+Não recomendável, altera cada elemento manualmente
+EVITE USAR
+
+/*Estilos locais/internos*/
+<head>
+<style>
+   body {
+       background: blue;
+   }
+</style>
+</head>
+
+Melhor que a primeira, recomendada para páginas simples,
+quando não se altera outras páginas
+
+/*Estilos externos*/
+<head>
+   
+</head>

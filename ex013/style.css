@@ -1,0 +1,15 @@
+/*Estilos externos*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightcyan;
+    color: blue;
+}
+h1 {
+    color: green;
+    background: yellow;
+}
+h2 {
+    color: red;
+}
+  

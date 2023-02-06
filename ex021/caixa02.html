@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tag</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;    
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 5px 5px rgba(28, 28, 28, 0.6)
+        }
+        nav {
+            background-color: dimgray;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 2px 2px 2px #0000009e;
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+            border-radius: 1px 10px;
+        }
+        article {
+            background-color: lightgray;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+            margin-bottom: 10px;
+        }
+        article > aside {
+            background-color: rgb(155, 155, 155);
+            padding: 2px;
+        }
+        article > aside > p {
+            margin: 0px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        h2 {
+            margin: 2px;
+        }
+        #destaque {
+            background-color: rgba(255, 255, 0, 0.492);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>  <!--Cabeçalho-->
+        <h1>Título</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--Conteúdo principal-->
+        <section id="noticias">
+            <article>
+                <h2 id="destaque">Notícias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim sed inventore esse perspiciatis animi excepturi adipisci accusamus eos ducimus repellendus quidem, dignissimos tempora odio nobis culpa dolor nesciunt? Quis.</p>
+            </article>
+        </section>
+        <section id="assuntos"> <!--assuntos-->
+            <article> 
+                <h2>Subtítulo</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ullam consequatur facere fuga possimus blanditiis dolore veritatis. Enim earum, praesentium velit obcaecati quisquam laboriosam id consequatur cum nulla facere esse.</p>
+                <aside>
+                    <p> Artigo por Kaio </p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Fornecido por Kaio</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+Caderno M3
+
+[Cap 18]
+
+ºaula #1 >> Versionamento de software
+=> Git e Github
+
+>> Repositório local/remoto
+
+-> Gerenciador de versões => git (local)
+-> Backup na nuvem => github (remoto)
+
+Mandar arquivo do local para o remoto -> push
+
+ºaula #2
+Instalação do git
