@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead {
+            position: sticky;
+            top: -1px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 919 049</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 168 791</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 264 102</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 919 049</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 168 791</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 264 102</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 919 049</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 168 791</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 264 102</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num">0000</td>
+            </tfoot>
+    </table>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem veniam reprehenderit aliquam earum alias, ipsa eaque rem velit distinctio temporibus inventore sed dignissimos in voluptatibus quod at. Et, velit dolores odit nam dicta blanditiis temporibus suscipit quibusdam totam facilis vitae accusamus optio earum facere rem alias culpa officiis, quasi perferendis veritatis ipsa. Officiis temporibus et doloribus eaque soluta eos molestias neque autem corporis nostrum iure hic, explicabo magni, omnis incidunt vitae dolorem ab quae veniam ex deserunt. Dolorum aliquam dignissimos, provident sit voluptate consectetur, fugiat veritatis laudantium hic officia fugit omnis quae quis illo facere dicta magni perferendis vitae nostrum odit numquam voluptas quam! Culpa harum eveniet ipsam doloremque cupiditate! Eveniet, molestiae voluptatibus voluptas voluptates fugit, eum ducimus maxime porro impedit, hic dolore doloremque quo aliquid. Dolore vitae quam, amet iste esse consequatur. Nam ullam esse sit hic odit! Iusto, expedita excepturi asperiores consequuntur eaque perspiciatis unde pariatur. Laborum alias tempora, provident, nihil nam consequatur quam beatae minus suscipit quisquam incidunt repellendus. In ipsam perferendis voluptatibus praesentium id quod tempora ea nulla voluptatum officiis ipsum, ad iste et, nesciunt veritatis doloribus fuga reprehenderit? Itaque provident dicta fugiat, doloremque quia dolorem tempora totam accusamus eligendi assumenda perspiciatis placeat quas qui iure?
+</body>
+</html>

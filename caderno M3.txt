@@ -14,3 +14,77 @@ Mandar arquivo do local para o remoto -> push
 
 ºaula #2
 Instalação do git
+
+Coloque uma cor de fundo no site
+
+Evitar que o fundo fique ruim
+-> background-size: ;
+> contain --> a imagem fica 100% exibida
+>>> cover ---> cobre a tela inteira
+
+==> height: 100vh --> view height
+
+Impedindo que o fundo quebre
+
+==> Centralização vertical de caixas
+
+Container 
+---> posição relativa
+
+Conteudo
+---> posição absoluta
+propriedades: 
+==> left; top
+
+transform ==> altera uma caixa
+==> translate --> mexe a caixa
+
+left, top: 50%
+transform: translate(-50%, -50%);
+
+font-variant: small-caps;
+
+>>> display: inline-block; ==> a caixa se adapta ao conteúdo
+
+Capítulo 21 --- TABELAS
+
+NÃO use tabelas para estruturar o site
+
+Todas as tabelas simples tem essa hierarquia
+
+TABLE 
+	TABLE ROW
+		TABLE HEADER
+		TABLE DATA
+
+>>> Border-colapse --> espaço entre as bordas
+
+</td> e </tr> são opcionais
+
+Se a hierarquia não for obedecida, os dados vão aparecer antes ou depois
+
+>>>>> Alinhando conteúdo em tabelas
+> horizontal -> text-align
+> vertical -> vertical-align
+
+
+====> estrutura de tabelas
+
+> caption ---> legenda da tabela
+
+scope="col/row"
+
+________Efeito zebrado
+
+tbody > tr:nth-child(2n) ----> de duas em duas
+
+:nth-child(value)
+-> (odd) (2n-1)
+-> (even) (2n)
+
+fixar o cabeçalho
+table -> position: relative;
+thead -> position: sticky; -> top: -1px;
+
+
+===== Mesclagem de célula =======
