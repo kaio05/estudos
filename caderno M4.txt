@@ -1,0 +1,73 @@
+Módulo 4 - Curso de HTML + CSS
+
+
+O que vamos aprender?
+
+C22 - Iframe
+
+C23 - Projeto redes sociais
+
+C24 - Formulários
+
+C25 - Media query
+
+Projeto final - Tela de Login
+
+///////////////////////////////////////////
+
+Capítulo 22
+
+>> I(nline) frame
+
+** Dentro do iframe você pode colocar algo que só aparece caso não haja compatibilidade
+com o conteúdo **
+ ______________________
+|Muitos sites bloqueiam|
+''''''''''''''''''''''''
+Tamanho padrão 300x150
+
+* CSS é soberano {
+	configurações em CSS ganham prioridade em relação àquelas
+	no próprio Iframe
+}
+
+>> Frameborder -> aceita 0 ou qualquer outra coisa
+
+>> Scrolling -> auto, yes ou no --> dependendo do browser, não faz diferença
+
+$$ Você pode colocar seus próprios sites no ifrane
+
+---> para tabelas, é melhor vc usar a própria rolagem scroll-x ou scroll-y
+
+** Para navegar entre páginas pelo seu iframe, você precisa:
+1- Dar um nome ao seu iframe
+2- Nos seus links, dar à propriedade target o valor do nome do seu iframe
+
+====> Você pode colocar conteúdo HTML no seu iframe por meio do parâmetro srcdoc,
+porém, o recomendado é você fazer um arquivo separado
+
+exemplo.:
+
+<iframe name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quidem itaque alias, debitis esse modi aliquam autem quibusdam et veniam. Quasi ipsum molestias nemo sequi, dolores eaque harum odit exercitationem.</p><img src='imagens/download.jpg'>" frameborder="0"></iframe>
+
+%% É possível que haja problemas com iframes pelo google bot, então não coloque 
+conteúdo vital nele %%
+%% Há também problemas de acessibilidades com leitor de tela 
+%% Os navegadores podem se confundir com o uso de funções no iframe
+%% Cuidado com os sites que você usa, pois eles podem ter sido infectados
+-> Crosssite e XSS
+
+@@@@ Como tornar seu site mais seguro? @@@@@
+
+atributo sandbox="sandbox" --> não captura informação por sites externos
+atributo referrerpolicy="no-referrer" --> o conteúdo do iframe não coleta informação do usuário
+
+sandbox="allow-same-origin"  ---> permite coisas da mesma origem
+
+""""""" Outras formas de usar iframes
+> Vídeo
+> Mapas
+> Slides
+> Planilhas
+
+
