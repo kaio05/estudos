@@ -5,7 +5,7 @@ O que vamos aprender?
 
 C22 - Iframe
 
-C23 - Projeto redes sociais
+C23 - Projeto redes sociais 
 
 C24 - Formulários
 
@@ -69,5 +69,87 @@ sandbox="allow-same-origin"  ---> permite coisas da mesma origem
 > Mapas
 > Slides
 > Planilhas
+
+::-webkit-scroller {
+	width: 0px;
+	heigh: 0px;
+}
+
+>> esconde a barra de rolagem
+
+/////////////////////////////////////////////////////
+
+Capítulo 24
+
+
+############ FORMULÁRIOS ################
+
+formulários recebem informações do usuário e as armazenam para
+serem utilizadas.
+
+eles são delimitados por <form> e </form>
+
+a forma
+<form>
+	<p>Título: <input type="text" name="dado"></p>
+	<p><input type="submit" value="enviar"></p>
+</form>
+não é ideal pq não há ligação entre o título e a input
+
+> Para resolver isso, podemos utilizar as labels e id
+
+<form action="cadastro.php">
+	<p><label for"nome">Nome:</label>
+		<input type="text" id="nome"></p>
+</form>
+
+--> Isso facilita para os mecanismos de busca indexar o seu site e 
+também melhorar a usabilidade.
+
+$$ Para enviar os dados do formulário, podemos usar:
+<form action="cadastro.php"> por exemplo
+
+# É possível remover sugestões utilizando o atributo autocomplete
+com o valor "off"
+
+
+##### MÉTODOS DE ENVIO DE FORMULÁRIOS #####
+
+1- GET (método padrão)
+-> dados ficam visíveis na URL
+-> usado para dados não sensíveis
+-> só pode enviar até 3kb
+
+2- POST 
+-> não aparece na URL, mas pode ser encontrado nos Requests, na 
+parte Network
+-> dados sensíveis (cuidado)
+-> mais de 3kb
+
+** Para proteger seus dados, você terá que usar criptografia com
+HTTPS
+
+
+### Controles de formulário ###
+
+>> Tipos de input
+
+> password -> esconde o valor
+> submit -> envia formulário
+> reset -> limpa formulário
+> month/date/time
+
+
+$$ Atributos
+
+$ required -> evita que seja enviado formulário vazio
+$ minlength/maxlength --> autoexplicativo
+$ size --> diz quantas letras vai mostrar
+$ placeholder --> mostra um texto dentro
+$ autocomplete --> vai entrar no seu gerenciador de senhas
+$ min/max --> valores numéricos mínimos e máximos
+$ step --> intervalo entre valores válidos
+$ value --> valor já preenchido
+
 
 
