@@ -138,6 +138,25 @@ HTTPS
 > submit -> envia formulário
 > reset -> limpa formulário
 > month/date/time
+> email --> tipo de e-mail, mas só verifica se tem ou não um @
+> tel --> número de telefone, também não tem muitos filtros
+> radio --> quando um é marcado, os outros de ***mesmo nome*** são desmarcados
+> checkbox --> caixas que podem ser mutualmente marcadas
+> color
+> range
+> file --> visitante escolhe
+> image --> dev escolhe
+
+** no caso de envio de arquivos, deve-se utilizar o método POST
+
+**** Estudar RegEx
+===> pattern="^[0-9]{4}-[0-9]{4}$" ==> exemplo de expressão regular para número de
+telefone
+
+exemplo.: pattern="^\(\d{2}\)\d{4,5}-\d{4}$"
+
+>> esses padrões não são suficiente para impedir alguns tipos de dados errados,
+essa verificação deve ser feita ou em js ou php
 
 
 $$ Atributos
@@ -150,6 +169,44 @@ $ autocomplete --> vai entrar no seu gerenciador de senhas
 $ min/max --> valores numéricos mínimos e máximos
 $ step --> intervalo entre valores válidos
 $ value --> valor já preenchido
+$ checked --> deixa a caixa marcada por padrão
 
+
+======> !!!!!!  Guanabara mandou testar nos navegadores
+
+<fieldset> --> agrupamento de campo
+<legend> --> legenda de grupo
+
+
+### Elementos fora da tag input
+
+<select name="estados" id="iest">    ====> lista de opções
+	<option value="" selected>---Escolha---</option>
+	<optgroup label="Região Sudeste">    ====> grupo de opções
+		<option value="SP">São Paulo</option>  ====> opções individuais
+		<option value="RJ">Rio de Janeiro</option>
+		<option value="MG">Minas Gerais</option>
+		<option value="ES">Espírito Santo</option>
+	</optgroup>
+</select>      
+
+<select name="profissões" id="iprof">
+	<input type="text" name="prof" list="iprof">  ===> atributo "list" indica lista de opções
+	<datalist id="lisprof">  ====> lista com opções
+		<option>Administrador</option>
+		<option>Médico</option>
+		<option>Bombeiro</option>
+	</datalist>
+
+
+
+*** Diferença: enquanto no primeiro caso as opções são restritas àquelas programadas,
+no segundo caso, ele apenas vai sugerir opções, mas vai aceitar o que o usuário 
+escrever.
+
+--> 
+
+<textarea> ---> aceita texto, pode-se limitar em colunas e em linhas visíveis,
+porém a quantidade de linhas possíveis é infinita, logo, use o método POST
 
 
