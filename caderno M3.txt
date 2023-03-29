@@ -15,7 +15,7 @@ Mandar arquivo do local para o remoto -> push
 ºaula #2
 Instalação do git
 
-Coloque uma cor de fundo no site
+>>> Coloque uma cor de fundo no site para melhorar o carregamento.
 
 Evitar que o fundo fique ruim
 -> background-size: ;
@@ -72,7 +72,7 @@ Se a hierarquia não for obedecida, os dados vão aparecer antes ou depois
 
 > caption ---> legenda da tabela
 
-scope="col/row"
+scope="col/row/colgroup/rowgroup"
 
 ________Efeito zebrado
 
@@ -88,3 +88,5 @@ thead -> position: sticky; -> top: -1px;
 
 
 ===== Mesclagem de célula =======
+
+Uso de colspan e rowspan para definir quantas linhas/colunas a célula vai ocupar

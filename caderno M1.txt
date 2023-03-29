@@ -212,7 +212,7 @@ Links
 >next - o link é para a próxima parte do documento atual
 >prev - o link é para a parte anterior do documento atual
 >author - o link é para um site do autor atual
->exterbal - o link é para um site que não faz parte do site atual
+>external - o link é para um site que não faz parte do site atual
 >nofollow - o link é para um site endossado, como um link pago
 
 <a href="pagina2.html" target="_self" rel="next">
@@ -228,7 +228,7 @@ Links
 // link externo
 
 &&Downloads
-<a href="arquivos/meuarquivo.pdf" download="meuarquivo.pdf" type="applicarion/pdf">
+<a href="arquivos/meuarquivo.pdf" download="meuarquivo.pdf" type="application/pdf">
 	Baixe aqui o PDF do meu arquivo
 </a>
 
@@ -262,7 +262,7 @@ A imagem grande é o padrão
 > Sempre da menor para a maior
 
 A tag <source> possui três atributos:
-> type vai indicaar o media type da imagem
+> type vai indicar o media type da imagem
 > srcset vai configurar o nome da imagem que será 
 carregada quando o tamanho indicado for atingido
 > media indica o tamanho máximo a ser considerado 
@@ -358,5 +358,5 @@ quando não se altera outras páginas
 
 /*Estilos externos*/
 <head>
-   
+   <link rel='stylesheet' style='styles.css'>
 </head>

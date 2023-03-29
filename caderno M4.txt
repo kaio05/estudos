@@ -19,7 +19,7 @@ Capítulo 22
 
 >> I(nline) frame
 
-** Dentro do iframe você pode colocar algo que só aparece caso não haja compatibilidade
+** Dentro da tag <iframe> e </iframe> você pode colocar algo que só aparece caso não haja compatibilidade
 com o conteúdo **
  ______________________
 |Muitos sites bloqueiam|
@@ -31,7 +31,7 @@ Tamanho padrão 300x150
 	no próprio Iframe
 }
 
->> Frameborder -> aceita 0 ou qualquer outra coisa
+>> Frameborder -> aceita 0 ou qualquer outra coisa  ==> Define se vai ter ou não a borda padrão
 
 >> Scrolling -> auto, yes ou no --> dependendo do browser, não faz diferença
 
@@ -54,15 +54,19 @@ exemplo.:
 conteúdo vital nele %%
 %% Há também problemas de acessibilidades com leitor de tela 
 %% Os navegadores podem se confundir com o uso de funções no iframe
-%% Cuidado com os sites que você usa, pois eles podem ter sido infectados
+%% Cuidado com os sites que você usa, pois eles podem ter sido infectados e o iframe pode servir de porta para ataques
 -> Crosssite e XSS
 
 @@@@ Como tornar seu site mais seguro? @@@@@
 
-atributo sandbox="sandbox" --> não captura informação por sites externos
-atributo referrerpolicy="no-referrer" --> o conteúdo do iframe não coleta informação do usuário
+atributo sandbox pode bloquear ou permitir certas ações no seu iframe;
+ex.: sandbox="sandbox" --> não captura informação por sites externos
 
 sandbox="allow-same-origin"  ---> permite coisas da mesma origem
+
+atributo referrerpolicy="no-referrer" --> o conteúdo do iframe não coleta informação do usuário
+
+
 
 """"""" Outras formas de usar iframes
 > Vídeo
@@ -159,22 +163,22 @@ exemplo.: pattern="^\(\d{2}\)\d{4,5}-\d{4}$"
 essa verificação deve ser feita ou em js ou php
 
 
-$$ Atributos
+$$ Atributos de input
 
 $ required -> evita que seja enviado formulário vazio
 $ minlength/maxlength --> autoexplicativo
 $ size --> diz quantas letras vai mostrar
 $ placeholder --> mostra um texto dentro
-$ autocomplete --> vai entrar no seu gerenciador de senhas
+$ autocomplete --> vai entrar no seu gerenciador de senhas (pode especificar o tipo de dado)
 $ min/max --> valores numéricos mínimos e máximos
 $ step --> intervalo entre valores válidos
 $ value --> valor já preenchido
 $ checked --> deixa a caixa marcada por padrão
 
 
-======> !!!!!!  Guanabara mandou testar nos navegadores
+======> !!!!!!  Guanabara mandou TESTAR EM OUTROS NAVEGADORES !!!!!! <=======
 
-<fieldset> --> agrupamento de campo
+<fieldset> --> agrupamento de campo no formulário
 <legend> --> legenda de grupo
 
 
@@ -208,5 +212,17 @@ escrever.
 
 <textarea> ---> aceita texto, pode-se limitar em colunas e em linhas visíveis,
 porém a quantidade de linhas possíveis é infinita, logo, use o método POST
+
+
+Tag <output> --> mostra coisas na tela com base no resultado de um cálculo de inputs
+em javascript ou ação de um usuário no preenchimento dessas inputs
+
+ex.:
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  <input type="range" id="a" value="50">
+  +<input type="number" id="b" value="25">
+  =<output name="x" for="a b"></output>
+</form>
 
 
