@@ -226,3 +226,20 @@ ex.:
 </form>
 
 
+////////////////////////////////////////////////////////////////////////////////
+
+@media queries
+
+* Seu conteúdo pode ser exibido em diversas mídias diferentes
+
+--> As media queries são o que garantem que seu conteúdo seja adequadamente em
+diferentes mídias.
+--> É um recurso que adapta seu conteúdo a diferentes mídias/tamanhos de tela
+
+Ex.:
+
+<link rel="stylesheet" href="estilos/tela.css" media="screen">
+--> media query para apresentação em tela
+
+<link rel="stylesheet" href="estilos/impressora.css" media="print">
+--> media query para impressão
