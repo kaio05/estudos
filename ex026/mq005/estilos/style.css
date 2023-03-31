@@ -1,0 +1,16 @@
+/* configurações gerais */
+
+menu li {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--cor1);
+    border-radius: 4px;
+}
+
+menu {
+    display: block;
+}
+
+i#burger {
+    display: none;
+}

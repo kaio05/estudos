@@ -242,4 +242,58 @@ Ex.:
 --> media query para apresentação em tela
 
 <link rel="stylesheet" href="estilos/impressora.css" media="print">
---> media query para impressão
+--> media query para impressão   ===> media types
+
+
+Media query = media types + media features
+
+---> media features são colocados entre parênteses e indicam o tamanho da tela ou
+orientação
+
+ex.:
+
+<link rel="stylesheet" href="estilos/style.css" media="all">
+<link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation:portrait)">
+<link rel="stylesheet" href="estilo/paisagem.css" media="screen and (orientation:portrait)">
+
+
+>> O primeiro link utiliza um media type para todos os tipos de mídia, seja tela, impressora
+etc.
+>> O segundo apresenta um media feature que indica orientação retrato da tela,
+enquanto o terceiro tem um media feature para tela em paisagem.
+
+
+>> Outra forma de usar media queries é dentro de um arquivo CSS ou do elemento
+<style>
+
+@media screen and (orientation: portrait) {
+	Configurações para retrato
+}
+
+
+>>>>>>>>>> Mobile first <<<<<<<<<<<<<
+
+Abordagem onde se constrói seu site *primeiro na versão móvel* para depois adaptar
+para o computador, evitando perder na experiência do usuário.
+
+### vantagens
+
+# facilidade na divulgação pelas ferramentas de busca
+# melhoria na UX
+# aumento de credibilidade
+# + performance
+
+
+%%%%%%%%  Projeto - Resposta visual para mídias diferentes %%%%%%%%%%
+
+$$ Typical devices breakpoints - definir limites de tipos de tela
+------------------------------------------------------------------
+pequenas telas - <= 600px
+celular - 600px - 768px
+tablet - 768px - 992px
+desktop - 992px - 1200px
+grandes telas - >= 1200px 
+
+** Precisam de atualização com o tempo, então pesquise!
+
+====> Impressora não funciona background
